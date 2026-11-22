@@ -10,6 +10,7 @@ function setup() {
   let cnv = createCanvas(600, 430);
   cnv.parent("canvas-holder");
 
+  // Keyboard controls for Pause/Resume (SPACE) and Speed (W/S)
   window.addEventListener("keydown", function(event) {
     if (event.code === "Space") {
       event.preventDefault();
@@ -33,6 +34,7 @@ function draw() {
   noStroke();
   circle(centerX, centerY, 14);
 
+  // Calculate elliptical (x, y) position using cosine and sine
   let orbiterX = centerX + horizontalRadius * cos(currentAngle);
   let orbiterY = centerY + verticalRadius * sin(currentAngle);
 
@@ -43,6 +45,7 @@ function draw() {
   noStroke();
   circle(orbiterX, orbiterY, 22);
 
+  // Increment angle each frame to animate the orbit
   if (!isPaused) {
     currentAngle += angularSpeed;
   }
