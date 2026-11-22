@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT3 Final Drill: Elliptical Orbit</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: #f4f6f9;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 25px;
+      line-height: 1.6;
+    }
+    .box {
+      max-width: 600px;
+      background: #fff;
+      padding: 16px 22px;
+      border: 1px solid #ccc;
+      margin-top: 15px;
+    }
+    a {
+      color: #0b57d0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Elliptical Trigonometric Orbit</h1>
+
+  <div id="canvas-holder"></div>
+
+  <div class="box">
+    <p><strong>Controls:</strong> <b>SPACE</b> = Pause / Resume &nbsp;|&nbsp; <b>W</b> = Faster &nbsp;|&nbsp; <b>S</b> = Slower</p>
+    <p><strong>Explanation Video:</strong> <a href="YOUR_VIDEO_LINK_HERE" target="_blank">Watch Video Explanation</a></p>
+
+    <p><strong>References, Borrowed Code &amp; AI Tools:</strong></p>
+    <ul>
+      <li><a href="https://p5js.org/reference/" target="_blank">p5.js Official Reference</a> — Used for <code>createCanvas()</code>, <code>ellipse()</code>, <code>circle()</code>, <code>cos()</code>, and <code>sin()</code> functions.</li>
+      <li><a href="https://www.khanacademy.org/math/precalculus/x9e81a4f98389efdf:parametrics" target="_blank">Khan Academy: Parametric Equations</a> — Referenced for the elliptical coordinate formulas <code>x = h + a*cos(θ)</code> and <code>y = k + b*sin(θ)</code>.</li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event" target="_blank">MDN Web Docs: keydown Event</a> — Referenced for the <code>window.addEventListener("keydown")</code> keyboard control handler.</li>
+      <li><a href="https://gemini.google.com/" target="_blank">Google Gemini AI</a> — Used for code structuring, comments, and layout refinement.</li>
+    </ul>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
